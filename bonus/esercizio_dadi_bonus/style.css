@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    padding: 0 10px;
+}
+
 /* CONTAINER */
 #container {
     display: flex;
@@ -17,6 +21,7 @@
     border-radius: 20px;
 }
 
+/* wrapper */
 #numbers {
     display: flex;
     justify-content: center;
