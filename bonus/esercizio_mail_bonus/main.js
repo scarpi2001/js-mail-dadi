@@ -13,7 +13,7 @@ for (let i = 0; i < listaMail.length; i++) {
 
     if (mail === listaMail[i]) {
 
-        invitato = true;
+        invitato = true
         console.log("sei invitato");
 
     } 
