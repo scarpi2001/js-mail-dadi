@@ -3,26 +3,43 @@
 //costanti e variabili
 const listaMail = ["pippo@gmail.com","luca@gmail.com","mario@gmail.com","andrea@gmail.com"];
 
-//Chiedi mail
-let mail = prompt("inserisci la tua email");
+//richiama elementi html
+const inputField = document.getElementById("email");
+const myButton = document.getElementById("button");
+const title = document.querySelector("h2");
 
-//check lista
-let invitato = false;
+myButton.addEventListener("click",
 
-for (let i = 0; i < listaMail.length; i++) {
+    function(){
+        //Chiedi mail
+        let mail = inputField.value;
 
-    if (mail === listaMail[i]) {
+        //check lista
+        let invitato = false;
 
-        invitato = true
-        console.log("sei invitato");
+        for (let i = 0; i < listaMail.length; i++) {
 
-    } 
+            if (mail === listaMail[i]) {
 
-}
+                invitato = true;
+                title.innerHTML = "Sei invitato";
 
-if (invitato === false) {
-    console.log("non sei invitato");
-}
+            } 
+
+        }
+
+        if (invitato === false) {
+            
+            title.innerHTML = "Non sei invitato";
+            
+        }
+
+        inputField.value = "";
+        
+    }
+
+);
+
 
     
 
