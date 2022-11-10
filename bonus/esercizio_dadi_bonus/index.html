@@ -7,17 +7,31 @@
     <link rel="stylesheet" href="style.css">
     <title>gioco dadi</title>
 </head>
+
 <body>
-    <div class="container">
-        <div id="content">
-            <div id="your_number"></div>
-            <div id="pc_number"></div>
+    <!-- CONTAINER -->
+    <div id="container">
+        <!-- wrapper -->
+        <div id="wrapper">
+            <div id="numbers">
+                <div id="your_number" class="content_box">
+                    <h2>il tuo numero</h2>
+                    <h3></h3>
+                </div>
+                <div id="pc_number" class="content_box">
+                    <h2>numero computer</h2>
+                    <h3></h3>
+                </div>
+            </div>
+    
+            <div id="win_lose">
+                <h1></h1>
+            </div>
+    
+            <form action="#">
+                <input id="button" type="button" value="Tira">
+            </form>
         </div>
-
-        <div id="win_lose">
-        </div>
-
-        <input id="button" type="button" value="Tira">
     </div>
     <script src="main.js"></script>
 </body>

@@ -2,9 +2,9 @@
 
 //richiama elementi html
 const myButton = document.getElementById("button");
-const yourNumber = document.getElementById("your_number");
-const pcNumber = document.getElementById("pc_number");
-const winLose = document.getElementById("win_lose");
+const yourNumber = document.querySelector("#your_number h3");
+const pcNumber = document.querySelector("#pc_number h3");
+const winLose = document.querySelector("#win_lose h1");
 
 //crea evento click bottone
 myButton.addEventListener("click",

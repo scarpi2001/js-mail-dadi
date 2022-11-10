@@ -1,0 +1,39 @@
+/* GENERALI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTAINER */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    height: 500px;
+    margin: 100px auto;
+    background-color: crimson;
+    border-radius: 20px;
+}
+
+#numbers {
+    display: flex;
+    justify-content: center;
+}
+
+.content_box {
+    max-width: 300px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#win_lose, form {
+    text-align: center;
+}
+
+#win_lose h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
